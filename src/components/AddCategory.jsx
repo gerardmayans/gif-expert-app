@@ -1,16 +1,19 @@
 import { useState } from "react";
 
-export const AddCategory = () => {
+export const AddCategory = ({ onNewCategory }) => {
 
-    const [inputValue, setInputValue] = useState("Doraemon")
+    const [inputValue, setInputValue] = useState("")
 
-    const onInputChange = (e) =>{
-       setInputValue (e.target.value);
+    const onInputChange = (e) => {
+        setInputValue(e.target.value);
     }
 
     const onSubmit = (e) => {
         e.preventDefault();
-        console.log(inputValue);
+        if (inputValue.trim().length <= 1) return;
+        // setCategories((categories) => [inputValue, ...categories]);
+        onNewCategory(inputValue.trim())
+        setInputValue("");
     }
 
     return (
@@ -20,8 +23,8 @@ export const AddCategory = () => {
                 type="text"
                 placeholder="Buscar gif"
                 value={inputValue}
-                onChange={ onInputChange }
-                />
+                onChange={onInputChange}
+            />
         </form>
     );
 }
