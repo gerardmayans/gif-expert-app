@@ -8,7 +8,7 @@ import { Hero } from "./Hero";
 
 export const ShinDoApp = () => {
 
-  const [categories, setCategories] = useState([ "Doraemon"]);
+  const [categories, setCategories] = useState([ "Shinchan"]);
 
   const onAddCategory = (newCategory) => {
     if(categories.includes(newCategory)) return;
@@ -21,7 +21,7 @@ export const ShinDoApp = () => {
       <Header />
       <Hero />
 
-      <GifGrid category = "doraemon"/>
+      <GifGrid category = "Sheldon"/>
 
        <About/>
       {/* <h1>Hola, mundillo.</h1>
