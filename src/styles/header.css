@@ -1,0 +1,26 @@
+.shindo__header{
+    background-color: white;
+}
+
+.shindo__header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 1920px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.shindo__logo{
+    max-height: 50px;
+}
+
+.shindo__links{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    font-size: 1.2rem;
+}

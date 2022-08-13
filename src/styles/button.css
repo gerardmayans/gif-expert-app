@@ -1,0 +1,10 @@
+.shindo__button{
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: white;
+    color: #2fc5f2;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 7px;
+
+}

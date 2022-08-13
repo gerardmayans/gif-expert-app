@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/site.css';
-import {GifExpertApp} from './components/GifExpertApp';
+
+
+import {ShinDoApp as ShinDoApp} from './components/ShinDoApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GifExpertApp />
+    <ShinDoApp />
   </React.StrictMode>
 );

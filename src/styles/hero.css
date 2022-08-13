@@ -1,0 +1,26 @@
+.shindo__hero{
+    width: 70%;
+    max-width: 1920px;
+    margin: auto;
+    padding: 10px 0;
+    gap: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shindo__hero-title{
+    font-size: 4rem;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.shindo__hero-text{
+    font-size: 1.3rem;
+    color: white;
+}
+
+.shindo__hero-img img{
+    width: 100%;
+}
