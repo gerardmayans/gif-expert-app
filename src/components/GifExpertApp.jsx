@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AddCategory } from "./AddCategory";
 import { GifGrid } from "./GifGrid";
 
+
 export const GifExpertApp = () => {
 
   const [categories, setCategories] = useState([ "Doraemon"]);
@@ -15,7 +16,7 @@ export const GifExpertApp = () => {
     <>
       <h1>Hola, mundillo.</h1>
 
-      <AddCategory 
+      <AddCategory
       // setCategories = { setCategories }
       onNewCategory = {(event => onAddCategory (event))}
       />
