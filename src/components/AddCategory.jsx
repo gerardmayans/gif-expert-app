@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import '../styles/add-category.css';
+
 export const AddCategory = ({ onNewCategory }) => {
 
     const [inputValue, setInputValue] = useState("")
@@ -18,13 +20,15 @@ export const AddCategory = ({ onNewCategory }) => {
 
     return (
 
-        <form onSubmit={onSubmit}>
+        <form className="add-category__form" onSubmit={onSubmit}>
             <input
+                className="add-category__input"
                 type="text"
-                placeholder="Buscar gif"
+                placeholder="Busca y añade GIFs..."
                 value={inputValue}
                 onChange={onInputChange}
             />
+            <button className="add-category__button">Añadir</button>
         </form>
     );
 }
