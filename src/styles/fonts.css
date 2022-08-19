@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("/Users/gerardmayans/Documents/Aplicaciones React/gif-expert-app/src/resources/fonts/SFPRODISPLAYREGULAR.OTF");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("/Users/gerardmayans/Documents/Aplicaciones React/gif-expert-app/src/resources/fonts/SFPRODISPLAYBOLD.OTF");
+    font-weight: bold;
+}

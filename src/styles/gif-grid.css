@@ -1,0 +1,38 @@
+.gif-grid {
+    margin: 100px 0;
+}
+
+
+.card-grid-wrapper {
+    width: 100%;
+    height: 280px;
+    overflow-y: scroll;
+}
+
+
+.trash-icon{
+    color: rgb(198, 6, 6);
+    height: 1.2rem;
+    cursor: pointer;
+}
+
+.card-grid {
+    width: 240%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .card-grid-wrapper {
+        overflow-y: unset;
+        width: unset;
+        height: unset;
+    }
+
+    .card-grid {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+}
